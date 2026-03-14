@@ -17,8 +17,8 @@ def main(request):
     return render(request,'index.html')
 
 
-# def register(request):
-#     if request.POST:
+def register(request):
+    if request.POST:
 
-#         print(request.POST)
-#     return render(request,'register.html')
+        print(request.POST)
+    return render(request,'register.html')

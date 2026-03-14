@@ -9,3 +9,7 @@ class Person(models.Model):
     phone = models.CharField(max_length=11)
     # area_code = models.CharField(max_length=5)
     exist = models.CharField(max_length=3)
+
+    def __str__(self):
+        # Admin panelda har bir Person obyektini "First Last" ko‘rinishida ko‘rsatadi
+        return f"{self.first_name} {self.last_name}"
